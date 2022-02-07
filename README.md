@@ -33,9 +33,13 @@
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=UpenTech&repo=ZombieApocalypse" /> &nbsp;&nbsp;&nbsp;
 </a>  
 
+<a href="https://github.com/UpenTech/C-Projects">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=UpenTech&repo=C-Projects" />
+</a> 
+
 <br>
 <br>
 
-![Jokes Card](https://readme-jokes.vercel.app/api?hideBorder&theme=vue-dark&qColor=%23944bcc&aColor=%23bbdb51) \
+![Jokes Card](https://readme-jokes.vercel.app/api?hideBorder&theme=vue-dark&qColor=%23944bcc&aColor=%23bbdb51) 
 
-<img src="https://img.shields.io/badge/ProtonMail-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white">
+<img src="https://img.shields.io/badge/ProtonMail-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white"> ndeu9@protonmail.com
