@@ -42,4 +42,4 @@
 
 ![Jokes Card](https://readme-jokes.vercel.app/api?hideBorder&theme=vue-dark&qColor=%23944bcc&aColor=%23bbdb51) 
 
-<img src="https://img.shields.io/badge/ProtonMail-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white"> ndeu9@protonmail.com
+<img src="https://img.shields.io/badge/ProtonMail-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white"> *ndeu9@protonmail.com*
