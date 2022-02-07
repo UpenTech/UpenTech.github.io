@@ -8,7 +8,8 @@
 ![Upen's GitHub stats](https://github-readme-stats.vercel.app/api?username=UpenTech&show_icons=true&theme=dark)
 <!-- Markdown -->
 <a href="https://github.com/anuraghazra/github-readme-stats">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=UpenTech&repo=Web_Scrapper-Movies-" />
+ <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=UpenTech&repo=Web_Scrapper-Movies-" />
 </a>
 <a href="https://github.com/anuraghazra/convoychat">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=UpenTech&repo=__Calculator" />
@@ -16,8 +17,5 @@
 
 
 ![Jokes Card](https://readme-jokes.vercel.app/api)
-
-
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=UpenTech&repo=__Calculator)](https://github.com/UpenTech/__Calculator)
 
 <img src="https://img.shields.io/badge/ProtonMail-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white">
