@@ -7,12 +7,24 @@
 
 ![Upen's GitHub stats](https://github-readme-stats.vercel.app/api?username=UpenTech&show_icons=true&theme=dark)
 <!-- Markdown -->
-<a href="https://github.com/anuraghazra/github-readme-stats">
+<a href="https://github.com/UpenTech/Web_Scrapper-Movies-">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=UpenTech&repo=Web_Scrapper-Movies-" />
- <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=UpenTech&repo=Web_Scrapper-Movies-" />
 </a>
-<a href="https://github.com/anuraghazra/convoychat">
+
+<a href="https://github.com/UpenTech/convoychat">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=UpenTech&repo=__Calculator" />
+</a>
+
+<a href="https://github.com/UpenTech/Turtle-Race">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=UpenTech&repo=Turtle-Race" />
+</a>
+
+<a href="https://github.com/UpenTech/SmartFridge">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=UpenTech&repo=SmartFridge" />
+</a>
+
+<a href="https://github.com/UpenTech/ZombieApocalypse">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=UpenTech&repo=ZombieApocalypse" />
 </a>
 
 
