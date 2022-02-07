@@ -1,6 +1,7 @@
 
 
 [![Upen's GitHub stats](https://github-readme-stats.vercel.app/api?username=UpenTech)](https://github.com/UpenTech/github-readme-stats)
+![Upen's GitHub stats](https://github-readme-stats.vercel.app/api?username=UpenTech&show_icons=true&theme=radical)
 
 
 
