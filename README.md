@@ -1,12 +1,12 @@
 
 # ABOUT
-----
  Mechanical Engineering Student and Aviation, Technology Geek. \
  I go by the pseudonym `ndeu` in the virtual world and am *Hungry* and *Foolish*. 
  
 
 ![Upen's GitHub stats](https://github-readme-stats.vercel.app/api?username=UpenTech&show_icons=true&theme=dark) 
 <!-- Markdown -->
+---
 <a href="https://github.com/UpenTech/Web_Scrapper-Movies-">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=UpenTech&repo=Web_Scrapper-Movies-&theme=gotham" /> &nbsp;&nbsp;&nbsp;
 </a>
@@ -43,5 +43,4 @@
 ![Jokes Card](https://readme-jokes.vercel.app/api?hideBorder&theme=vue-dark&qColor=%23944bcc&aColor=%23bbdb51) 
 <br>
 # Contact
-----
 *ndeu9@protonmail.com*  &nbsp;&nbsp;&nbsp;   <img src="https://img.shields.io/badge/ProtonMail-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white"> 
