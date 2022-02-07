@@ -2,12 +2,12 @@
 # ABOUT
 ----
  Mechanical Engineering Student and Aviation, Technology Geek.
- I go by the pseudonym ~ndeu~ on the world and am Hungry and Foolish.
+ I go by the pseudonym `ndeu` on the world and am *Hungry* and *Foolish*.
  
 
 ![Upen's GitHub stats](https://github-readme-stats.vercel.app/api?username=UpenTech&show_icons=true&theme=dark)
 <!-- Markdown -->
-
+	https://github-profile-trophy.vercel.app/?username={UpenTech}
 ![Jokes Card](https://readme-jokes.vercel.app/api)
 
 
