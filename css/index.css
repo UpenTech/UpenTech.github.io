@@ -1,5 +1,11 @@
+ .bodydesign{
+    background-color: #efe8b0;
+ }
+
+
 h1 {
     font-size: 28px;
+    background-color: #ccbc3d;
 }
 
 button {
@@ -75,7 +81,7 @@ button {
 
 .xerox-parc-image {
     max-width: 20%;
-    opacity: 0.5; /* Adjust the opacity as needed */
+    opacity: 0.7; /* Adjust the opacity as needed */
     margin-right:20px;
 }
 
