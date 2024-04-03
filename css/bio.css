@@ -7,19 +7,19 @@ h1 {
     background-color: #ccbc3d;
 }
 
-a {
+.link {
     text-decoration: none;
     color: blue;
 }
 
-a:visited {
+.link:visited {
     color: purple;
  }
 
- a:hover, a:focus {
-     color:hoverblue;
+ .link:hover, .link:focus {
+     color: hoverblue;
  }
 
- a:active {
-     color:red;
+ .link:active {
+     color: red;
 }
