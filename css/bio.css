@@ -17,7 +17,7 @@ h1 {
  }
 
  .link:hover, .link:focus {
-     color: hoverblue;
+     color: blue;
  }
 
  .link:active {
