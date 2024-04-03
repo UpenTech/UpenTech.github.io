@@ -6,3 +6,20 @@ h1 {
     font-size: 28px;
     background-color: #ccbc3d;
 }
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+ }
+
+ a:hover, a:focus {
+     color:hoverblue;
+ }
+
+ a:active {
+     color:red;
+}
