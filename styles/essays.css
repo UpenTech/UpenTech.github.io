@@ -98,4 +98,34 @@ a:active {
     font-family: monospace;
 }
 
+@media (max-width:450px){
+    :root {
+        font-size: 0.6em;
+    }
 
+    .nav-topics {
+        padding-right: 4.5em;
+    }
+
+    .nav-item {
+        padding: 0.225em 0.225em;
+    }
+
+    .content {
+        width: 90%;
+        margin: 0 auto;
+        background-color: #17191A;
+        height: 70vh;
+        border-radius:20px;
+    }
+
+    .content header {
+        font-size: 3em;
+    }
+
+    .content li {
+        font-size: 0.7em;
+        padding: 0.3em 1em;
+    }
+
+}

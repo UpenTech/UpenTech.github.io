@@ -95,3 +95,33 @@ a:active {
     padding-left: 20px;
 }
 
+@media (max-width:450px){
+    :root {
+        font-size: 0.6em;
+    }
+
+    .nav-topics {
+        padding-right: 4.5em;
+    }
+
+    .nav-item {
+        padding: 0.225em 0.225em;
+    }
+
+    .content {
+        width: 90%;
+        margin: 0 1.3em;
+        background-color: #17191A;
+        height: auto;
+        border-radius:20px;
+    }
+
+    .content header {
+        font-size: 3em;
+    }
+
+    .content p {
+        font-size: 1.7em;
+    }
+
+}

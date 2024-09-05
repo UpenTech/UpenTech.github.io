@@ -109,3 +109,48 @@ a:active {
 .images img:hover {
     transform: scale(1.5);
 }
+
+@media (max-width:450px){
+    :root {
+        font-size: 0.6em;
+    }
+
+    .nav-topics {
+        padding-right: 4.5em;
+    }
+
+    .nav-item {
+        padding: 0.225em 0.225em;
+    }
+
+    .content {
+        width: 90%;
+        margin: 0 auto;
+        background-color: #17191A;
+        height: 70vh;
+        border-radius:20px;
+    }
+
+    .content header {
+        font-size: 3em;
+    }
+
+    .content p {
+        font-size: 1.5em;
+    }
+
+    .profile img {
+        float: right;
+        margin: 1em 5em;
+        width: 10em;
+        height: 10em;
+        border-radius: 50%;
+    }
+    
+    .images img{
+        width: 3em;
+        height: 3em;
+        margin: 0.7em 3em;
+        transition: transform .2s;
+    }
+}
