@@ -124,7 +124,7 @@ a:active {
     }
 
     .content {
-        width: 90%;
+        width: 95%;
         margin: 0 auto;
         background-color: #17191A;
         height: 70vh;
@@ -137,6 +137,8 @@ a:active {
 
     .content p {
         font-size: 1.4em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
     }
 
     .profile img {
@@ -150,7 +152,7 @@ a:active {
     .images img{
         width: 3em;
         height: 3em;
-        margin: 0.7em 3em;
+        margin: 0.7em 3em 0.7em 1.7em;
         transition: transform .2s;
     }
 }

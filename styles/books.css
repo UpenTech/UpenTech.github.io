@@ -106,7 +106,7 @@ a:active {
     }
 
     .content {
-        width: 90%;
+        width: 95%;
         margin: 0 auto;
         background-color: #17191A;
         height: 70vh;
@@ -118,7 +118,9 @@ a:active {
     }
 
     .content p {
-        font-size: 1.7em;
+        font-size: 1.4em;
+        margin-left: 0.5em;
+        margin-left: 0.5em;
     }
 
 }

@@ -86,7 +86,7 @@ a:active {
     margin-left: 60px;
     margin-right: 25px;
     color: #D2D8D9;
-    text-align: justify;
+    text-align: left;
     font-size: 16px;
     padding-right: 20px;
     padding-left: 20px;
@@ -112,7 +112,7 @@ a:active {
     }
 
     .content {
-        width: 90%;
+        width: 95%;
         margin: 0 auto;
         background-color: #17191A;
         height: 70vh;
@@ -123,8 +123,13 @@ a:active {
         font-size: 3em;
     }
 
+    .content ol {
+        margin-left: 1.5em;
+        margin-right: 0.8em;
+    }
+    
     .content li {
-        font-size: 0.6em;
+        font-size: 0.7em;
         padding: 0.3em 1em;
     }
 

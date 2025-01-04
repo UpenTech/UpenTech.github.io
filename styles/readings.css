@@ -85,7 +85,7 @@ a:active {
     margin-left: 25px;
     margin-right: 25px;
     color: #D2D8D9;
-    text-align: justify;
+    text-align: left;
     font-size: 16px;
     padding-right: 20px;
     padding-left: 25px;
@@ -103,7 +103,8 @@ a:active {
     transition: transform .2s;
 }
 .booklist li:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
+    color: #028f17;
 }
 
 @media (max-width:450px){
@@ -120,7 +121,7 @@ a:active {
     }
 
     .content {
-        width: 90%;
+        width: 95%;
         margin: 0 auto;
         background-color: #17191A;
         height: auto;
@@ -133,11 +134,15 @@ a:active {
 
     .content p {
         font-size: 1.4em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        text-align: left;
     }
     
     .booklist {
         font-size: 1.4em;
-        margin: 1em 3em;
+        margin-left: 0.5em;
+
     }
     
     .booklist li {
