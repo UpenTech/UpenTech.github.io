@@ -95,23 +95,33 @@ a:active {
     padding-left: 20px;
 }
 
-.content .inner-link a:link {
-    color: #00ABD5;
-    text-decoration: none;
-    font-family: monospace;
-    font-size: 16px;
+.content .inner-link a {
+    color: inherit; /* Inherit color from the parent */
+    text-decoration: underline; /* Optional: Add underline for distinction */
+    font-weight: bold; /* Slight emphasis for links */
+    cursor: pointer;
 }
 
 .content .inner-link a:visited {
-    color: #f63c63;
+    color: #BFBFBF; /* Adjusted visited link color */
 }
 
 .content .inner-link a:hover {
-    color: #028f17;
+    color: #028f17; /* Highlight color on hover */
 }
 
 .content .inner-link a:active {
-    color: #00ABD5;
+    color: #00ABD5; /* Active state color */
+}
+
+/* Inline header styles */
+.content h1 {
+    display: inline; /* Makes the header part of the paragraph */
+    font-size: inherit; /* Inherits paragraph's font size */
+    font-weight: bold; /* Emphasizes the header */
+    text-transform: capitalize; /* Ensures consistent casing */
+    color: #FFFFFF; /* Adjusted color for emphasis */
+    margin-right: 5px; /* Adds spacing after the inline header */
 }
 
 @media (max-width:450px){
