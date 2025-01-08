@@ -96,7 +96,7 @@ a:active {
 }
 
 .content .inner-link a {
-    color: inherit; /* Inherit color from the parent */
+    color: #00ABD5; /* Inherit color from the parent */
     text-decoration: underline; /* Optional: Add underline for distinction */
     font-weight: bold; /* Slight emphasis for links */
     cursor: pointer;
