@@ -98,12 +98,12 @@ a:active {
 .content .inner-link a {
     color: #00ABD5; /* Inherit color from the parent */
     text-decoration: underline; /* Optional: Add underline for distinction */
-    font-weight: bold; /* Slight emphasis for links */
+    font-size: 16px;
     cursor: pointer;
 }
 
 .content .inner-link a:visited {
-    color: #BFBFBF; /* Adjusted visited link color */
+    color: #f63c63; /* Adjusted visited link color */
 }
 
 .content .inner-link a:hover {
@@ -115,12 +115,12 @@ a:active {
 }
 
 /* Inline header styles */
-.content h1 {
+.content .sub-head h1 {
     display: inline; /* Makes the header part of the paragraph */
     font-size: inherit; /* Inherits paragraph's font size */
     font-weight: bold; /* Emphasizes the header */
     text-transform: capitalize; /* Ensures consistent casing */
-    color: #FFFFFF; /* Adjusted color for emphasis */
+    color: #ffffff; /* Adjusted color for emphasis */
     margin-right: 5px; /* Adds spacing after the inline header */
 }
 
