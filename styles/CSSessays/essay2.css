@@ -114,14 +114,14 @@ a:active {
     color: #00ABD5; /* Active state color */
 }
 
-/* Inline header styles */
 .content .sub-head h1 {
-    display: inline; /* Makes the header part of the paragraph */
-    font-size: inherit; /* Inherits paragraph's font size */
-    font-weight: bold; /* Emphasizes the header */
-    text-transform: capitalize; /* Ensures consistent casing */
-    color: #ffffff; /* Adjusted color for emphasis */
-    margin-right: 5px; /* Adds spacing after the inline header */
+    display: inline; 
+    font-size: 1.5em; 
+    font-weight: bold; 
+    text-transform: capitalize; 
+    color: #ffffff; 
+    margin-right: 25px; 
+    padding-right: 30px;
 }
 
 @media (max-width:450px){
