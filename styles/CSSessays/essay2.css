@@ -120,8 +120,8 @@ a:active {
     font-weight: bold; 
     text-transform: capitalize; 
     color: #ffffff; 
-    margin-right: 25px; 
-    padding-right: 30px;
+    margin-left: 25px; 
+    padding-left: 30px;
 }
 
 @media (max-width:450px){
