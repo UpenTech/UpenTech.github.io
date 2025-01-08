@@ -95,6 +95,25 @@ a:active {
     padding-left: 20px;
 }
 
+.content .inner-link a:link {
+    color: #00ABD5;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.content .inner-link a:visited {
+    color: #f63c63;
+}
+
+.content .inner-link a:hover {
+    color: #028f17;
+}
+
+.content .inner-link a:active {
+    color: #00ABD5;
+}
+
 @media (max-width:450px){
     :root {
         font-size: 0.6em;

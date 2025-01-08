@@ -95,6 +95,8 @@ a:active {
     padding-left: 20px;
 }
 
+
+
 @media (max-width:450px){
     :root {
         font-size: 0.6em;
