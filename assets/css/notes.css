@@ -98,3 +98,34 @@
     }
 }
 
+/* Additional responsive adjustments for smaller screens */
+@media (max-width: 480px) {
+    .notes-container {
+        padding: 1rem 0.5rem 1.5rem 0.5rem;
+        gap: 1.2rem;
+    }
+    
+    .note-entry,
+    .note-entry:nth-child(even) {
+        padding: 0.8rem 0.4rem;
+        gap: 0.8rem;
+    }
+    
+    .note-title {
+        font-size: 1.2rem;
+    }
+    
+    .note-summary {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+    
+    .note-photo {
+        border-width: 3px;
+    }
+    
+    .note-photo img {
+        max-width: 160px;
+    }
+}
+

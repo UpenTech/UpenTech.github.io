@@ -4,6 +4,7 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 2.5rem 1rem 3rem 1rem;
+    width: 100%; /* Ensures full width with padding included */
 }
 
 .about-brief {
@@ -29,6 +30,7 @@
 
 .about-links {
     text-align: center;
+    width: 100%; /* Ensures full width */
 }
 
 .about-links h2 {
@@ -42,6 +44,7 @@
     flex-wrap: wrap;
     gap: 1.5rem;
     justify-content: center;
+    width: 100%; /* Ensures full width */
 }
 
 .about-link {
@@ -69,18 +72,65 @@
     color: #111311;
 }
 
+/* Responsive styles that complement the imported homepage.css */
+@media (max-width: 768px) {
+    .about-brief h2 {
+        font-size: 1.8rem;
+    }
+    
+    .about-brief p {
+        font-size: 1rem;
+    }
+    
+    .about-links h2 {
+        font-size: 1.3rem;
+    }
+}
+
 @media (max-width: 600px) {
     .about-container {
-        padding: 1.2rem 0.2rem 2rem 0.2rem;
+        padding: 1.2rem 0.8rem 2rem 0.8rem; /* Slightly increased horizontal padding */
     }
+    
     .about-brief {
-        padding: 1.2rem 0.5rem;
+        padding: 1.2rem 0.8rem; /* Slightly increased horizontal padding */
     }
+    
     .links-grid {
         flex-direction: column;
         gap: 0.7rem;
+        align-items: center; /* Centers the links */
+        max-width: 90%; /* Prevents links from touching edges */
+        margin: 0 auto;
     }
+    
     .about-link {
         justify-content: center;
+        width: 100%; /* Makes links take full width of container */
+        max-width: 300px; /* Prevents overly wide links */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-brief h2 {
+        font-size: 1.5rem;
+    }
+    
+    .about-links h2 {
+        font-size: 1.2rem;
+    }
+    
+    .about-brief {
+        padding: 1rem 0.5rem;
+    }
+    
+    .about-link {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .about-link img {
+        width: 18px;
+        height: 18px;
     }
 }

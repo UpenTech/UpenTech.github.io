@@ -103,3 +103,67 @@
         margin-right: auto !important;
     }
 }
+
+/* Additional responsive adjustments for smaller screens */
+@media (max-width: 480px) {
+    .projects-container {
+        padding: 1rem 0.5rem 1.5rem 0.5rem;
+        gap: 1.2rem;
+    }
+    
+    .project-entry,
+    .project-entry:nth-child(even) {
+        padding: 0.8rem 0.4rem;
+        gap: 0.8rem;
+        border-radius: 8px;
+    }
+    
+    .project-title {
+        font-size: 1.2rem;
+    }
+    
+    .project-summary {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+    
+    .project-photo {
+        border-width: 3px;
+    }
+    
+    .project-photo img {
+        max-width: 160px;
+    }
+}
+
+/* Adjustments for very small screens */
+@media (max-width: 360px) {
+    .projects-container {
+        padding: 0.8rem 0.3rem 1.2rem 0.3rem;
+        gap: 1rem;
+    }
+    
+    .project-entry,
+    .project-entry:nth-child(even) {
+        padding: 0.7rem 0.3rem;
+        gap: 0.7rem;
+        border-radius: 6px;
+    }
+    
+    .project-title {
+        font-size: 1.1rem;
+    }
+    
+    .project-summary {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    
+    .project-photo {
+        border-width: 2px;
+    }
+    
+    .project-photo img {
+        max-width: 140px;
+    }
+}
