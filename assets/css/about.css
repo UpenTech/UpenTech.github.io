@@ -1,0 +1,86 @@
+@import url("homepage.css");
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2.5rem 1rem 3rem 1rem;
+}
+
+.about-brief {
+    border-radius: 10px;
+    padding: 2rem 1.5rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.about-brief h2 {
+    color: var(--radar-green);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.about-brief p {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about-links {
+    text-align: center;
+}
+
+.about-links h2 {
+    color: var(--radar-green);
+    margin-bottom: 1.2rem;
+    font-size: 1.4rem;
+}
+
+.links-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.about-link {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: rgba(0,255,0,0.07);
+    border-radius: 6px;
+    padding: 0.7rem 1.2rem;
+    color: var(--text-color);
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 2px 8px 0 rgba(0,255,0,0.04);
+}
+
+.about-link img {
+    width: 22px;
+    height: 22px;
+    filter: invert(100%) brightness(90%);
+}
+
+.about-link:hover {
+    background: var(--radar-green);
+    color: #111311;
+}
+
+@media (max-width: 600px) {
+    .about-container {
+        padding: 1.2rem 0.2rem 2rem 0.2rem;
+    }
+    .about-brief {
+        padding: 1.2rem 0.5rem;
+    }
+    .links-grid {
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+    .about-link {
+        justify-content: center;
+    }
+}

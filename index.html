@@ -1,67 +1,70 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset='UTF-8'>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <title>Homepage</title>
-        <link rel="stylesheet" href="styles/homepage.css">
-        <link rel="icon" href="img/UG2.png" type="image/icon">
-    </head>
-
-    <body>
-        <nav class="nav-topics">
-            <div class="items-container">
-                <span class="nav-item">
-                    <a href="index.html">Home</a>
-                </span>
-
-                <span class="nav-item">
-                    <a href="projects.html">Projects</a>
-                </span>
-                
-                <span class="nav-item">
-                    <a href="essays.html">Essays</a>
-                </span>
-                
-                <span class="nav-item">
-                    <a href="readings.html">Readings</a>
-                </span>
-                
-                <span class="nav-item">
-                    <a href="books.html">Books</a>
-                </span>
-                
-                <span class="nav-item">
-                    <a href="contact.html">Contact</a>
-                </span>
-            </div>
-        </nav>
-
-        <div class="content">
-            <div class="introduction">
-                <header>Introduction</header>
-                <div class="profile">
-                    <img src="img/portrait.jpg" alt="TheNerdyEngineer's  image">
-                </div>
-                <p>
-                Hey! Greetings and Salutaions, this is Upen or TheNerdyEngineer
-                if you've come across any of my digital footprint. I'm fascinated by
-                technology and aviation so, I mostly write in these domains. The technological
-                history encapsulates the humankind from discovery of fire to silicon breakthrough, 
-                so it's really important to appreciate all the sacrifices made along the way.
-                There were/are countless individuals who've contributed to the technological leap
-                some-of-whom were deemed heros while some dissapeared to obscurity. 
-                My head bows to all those who were there and made it possible! 
-                
-                </p>
-
-                <div class="innovate">
-                    <img src="img/XEROX_PARC.jpg" alt="TheNerdyEngineer's  image">
-                </div>
-            
-            </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>upengautam</title>
+    <link rel="stylesheet" href="assets/css/homepage.css">
+</head>
+<body>
+    <header>
+        <h1>Upendra Gautam</h1>
+        <h3>Mechanical Engineer | Hobbist Programmer | Aviation Enthusiast</h3>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects/index.html">Projects</a></li>
+            <li><a href="essays/index.html">Essays</a></li>
+            <li><a href="readings/index.html">Readings</a></li>
+            <li><a href="notes/index.html">Notes</a></li>
+            <li><a href="about/index.html">About</a></li>
+        </ul>
+    </nav>
+    
+    <div class="nav-underline"></div>
+    
+    <main>
+        <div class="radar-container" id="radar">
+            <canvas id="radar-canvas" class="radar-screen"></canvas>
+            <div class="tooltip" id="tooltip"></div>
+            <!-- No airspace divs anymore -->
         </div>
         
-    </body>
+        <div class="intro-text">
+            <h2>Hey! Greetings and Salutations</h2>
+            <p>
+                Myself, Upen or TheNerdyEngineer if you've come across any of my digital footprint. 
+                I'm fascinated by technology and aviation so, I mostly write in these domains. 
+                The technological history encapsulates the humankind from discovery of fire to silicon breakthrough, so it's really important to appreciate all the sacrifices made along the way. 
+                There were/are countless individuals who've contributed to the technological leap, and I want to extend that list.
+            </p>
+        </div>
+        
+        <div class="new-posts">
+            <h2>Latest Posts</h2>
+            <div class="post-list">
+                <div class="post-item">
+                    <div class="post-date">2025-05-08</div>
+                    <div class="post-link"><a href="notes/note1.html">Boeing 737 MAX: Ethics, MCAS, and Responsibility</a></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Upendra Gautam</p>
+        <a href="rss.xml" class="rss-link">
+            <svg class="rss-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="6.18" cy="17.82" r="2.18"/>
+                <path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/>
+            </svg>
+            RSS Feed
+        </a>
+    </footer>
+
+    <script src="assets/js/radar.js"></script>
+</body>
 </html>
+

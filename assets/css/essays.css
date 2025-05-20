@@ -1,0 +1,169 @@
+@import url("homepage.css");
+
+/* Container */
+.essays-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* Essay List */
+.essays-list {
+    list-style: none;
+    padding: 0;
+    counter-reset: essay-counter;
+    font-family: 'Courier New', monospace;
+}
+
+/* Essay Card */
+.essay-item {
+    margin-bottom: 2rem;
+    counter-increment: essay-counter;
+    border-radius: 16px;
+    background: rgba(34, 40, 36, 0.85);
+    box-shadow: 0 4px 24px 0 rgba(0,255,120,0.07), 0 1.5px 6px 0 rgba(0,0,0,0.12);
+    overflow: hidden;
+    transition: box-shadow 0.25s, transform 0.25s;
+    border: 1.5px solid rgba(0,255,120,0.13);
+    position: relative;
+}
+
+.essay-item::before {
+    content: "";
+    position: absolute;
+    top: -10px; left: -10px; right: -10px; bottom: -10px;
+    background: linear-gradient(120deg, rgba(0,255,120,0.08) 0%, rgba(0,255,120,0.03) 100%);
+    z-index: 0;
+    filter: blur(8px);
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.essay-item:hover {
+    box-shadow: 0 8px 32px 0 rgba(0,255,120,0.19), 0 2.5px 12px 0 rgba(0,0,0,0.18);
+    transform: translateY(-2px) scale(1.012);
+    border-color: var(--radar-green);
+}
+
+.essay-title {
+    width: 100%;
+    padding: 1.1rem 1.5rem;
+    background: rgba(0, 0, 0, 0.14);
+    border: none;
+    border-bottom: 1.5px solid rgba(0,255,120,0.13);
+    color: var(--radar-green);
+    font-size: 1.22rem;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+    user-select: none;
+    outline: none;
+    transition: background 0.18s, color 0.18s;
+    position: relative;
+    z-index: 1;
+    border-radius: 16px 16px 0 0;
+}
+
+.essay-title:focus {
+    background: rgba(0,255,120,0.10);
+    color: #fff;
+}
+
+.essay-title::after {
+    content: "▼";
+    margin-left: auto;
+    font-size: 1.1em;
+    color: #aaffcc;
+    transition: transform 0.2s;
+}
+
+.essay-title[aria-expanded="true"]::after {
+    content: "▲";
+    color: #fff;
+    transform: rotate(180deg);
+}
+
+.essay-number {
+    display: inline-block;
+    min-width: 2.1rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #aaffcc;
+    text-shadow: 0 1px 2px rgba(0,255,120,0.13);
+}
+
+/* Essay Content Styling */
+.essay-content {
+    padding: 1.15rem 1.5rem 1.5rem 2.8rem;
+    background: rgba(0, 0, 0, 0.09);
+    color: var(--text-color);
+    border-radius: 0 0 16px 16px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    box-shadow: 0 1px 8px 0 rgba(0,255,120,0.04) inset;
+    border-left: 3.5px solid var(--radar-green);
+    margin-top: -1px;
+    animation: essay-expand 0.35s cubic-bezier(.4,1.4,.6,1) both;
+    z-index: 1;
+    position: relative;
+}
+
+@keyframes essay-expand {
+    0% { opacity: 0; transform: translateY(-10px) scaleY(0.97);}
+    100% { opacity: 1; transform: none;}
+}
+
+.essay-content p {
+    margin: 0 0 1.1em 0;
+    color: var(--text-color);
+}
+
+/* Style links to match radar-green theme */
+.essay-content a {
+    color: var(--radar-green);
+    text-decoration: underline;
+    transition: color 0.2s, background 0.2s;
+    word-break: break-word;
+    font-weight: 500;
+}
+.essay-content a:hover,
+.essay-content a:focus {
+    color: #111311;
+    background: var(--radar-green);
+    text-decoration: underline wavy;
+    border-radius: 3px;
+    outline: none;
+}
+
+/* Optional: style strong/em in essay content */
+.essay-content strong, .essay-content b {
+    color: #fff;
+    font-weight: bold;
+}
+.essay-content em, .essay-content i {
+    color: #aaffcc;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .essays-container {
+        padding: 1rem;
+    }
+    .essay-title {
+        font-size: 1.06rem;
+        padding: 0.85rem 1rem;
+    }
+    .essay-number {
+        min-width: 1.5rem;
+        font-size: 1.1rem;
+    }
+    .essay-content {
+        font-size: 0.97rem;
+        padding: 0.85rem 1rem 1.1rem 1.7rem;
+    }
+}
+

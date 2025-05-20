@@ -1,0 +1,110 @@
+/* assets/css/readings.css */
+@import url("homepage.css"); /* Inherit base styles */
+
+.reading-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Centered, limited-width description paragraph */
+.reading-description {
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    padding: 0 1rem;
+    text-align: center;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+.category-section {
+    max-width: 800px; /* Limit width for all categories */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+}
+
+.category-header {
+    color: var(--radar-green);
+    border-bottom: 2px solid;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+/* Color Coding */
+#already-read .category-header { border-color: #00ff00; }
+#recommended .category-header { border-color: #ffa500; }
+#to-read .category-header { border-color: #9b59b6; }
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Always two columns on desktop/tablet */
+    gap: 1.5rem;
+}
+
+.book-entry {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 255, 0, 0.1);
+    padding: 1.2rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.book-entry:hover {
+    transform: translateY(-3px);
+    border-color: var(--radar-green);
+}
+
+.book-entry::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+}
+
+#already-read .book-entry::before { background: #00ff00; }
+#recommended .book-entry::before { background: #ffa500; }
+#to-read .book-entry::before { background: #9b59b6; }
+
+.book-title {
+    color: var(--radar-green);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.book-author {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .reading-container {
+        padding: 1rem;
+    }
+    .category-section {
+        max-width: 100%;
+    }
+    .reading-description {
+        max-width: 100%;
+    }
+    .books-grid {
+        grid-template-columns: 1fr; /* Stack on tablet/mobile */
+    }
+    .category-header {
+        font-size: 1.4rem;
+    }
+    .book-entry {
+        margin-bottom: 1rem;
+    }
+}
+
+
+

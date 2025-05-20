@@ -1,0 +1,105 @@
+@import url("homepage.css");
+
+.projects-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2.5rem 1rem 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.project-entry {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    background: rgba(255,255,255,0.03);
+    border-radius: 12px;
+    text-decoration: none;
+    transition: box-shadow 0.2s, background 0.2s;
+    box-shadow: 0 2px 16px 0 rgba(0,255,0,0.03);
+    padding: 1.5rem 1rem;
+}
+.project-entry:hover {
+    background: rgba(0,255,0,0.10);
+    box-shadow: 0 4px 24px 0 rgba(0,255,0,0.08);
+}
+
+.project-photo {
+    flex: 0 0 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid var(--radar-green);
+    min-width: 120px;
+    max-width: 200px;
+}
+.project-photo img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px 0 rgba(0,255,0,0.05);
+}
+
+.project-content {
+    flex: 1 1 0;
+    min-width: 0;
+    text-align: left;
+}
+.project-title {
+    color: var(--radar-green);
+    font-size: 1.4rem;
+    margin-bottom: 0.3rem;
+}
+.project-underline {
+    width: 60px;
+    height: 3px;
+    background: var(--radar-green);
+    margin-bottom: 0.8rem;
+    border-radius: 2px;
+    margin-left: 0;
+}
+.project-summary {
+    color: var(--text-color);
+    font-size: 1.08rem;
+    line-height: 1.6;
+}
+
+/* Alternate layout for every even project */
+.project-entry:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.project-entry:nth-child(even) .project-content {
+    text-align: right;
+}
+.project-entry:nth-child(even) .project-underline {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+@media (max-width: 700px) {
+    .projects-container {
+        padding: 1.2rem 0.2rem 2rem 0.2rem;
+        gap: 1.5rem;
+    }
+    .project-entry,
+    .project-entry:nth-child(even) {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+        padding: 1rem 0.5rem;
+    }
+    .project-photo {
+        max-width: 100%;
+        min-width: 0;
+        margin: 0 auto;
+    }
+    .project-content {
+        text-align: center !important;
+    }
+    .project-underline {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}

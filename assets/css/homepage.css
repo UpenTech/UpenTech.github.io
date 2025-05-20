@@ -1,0 +1,240 @@
+:root {
+    --primary-dark: #111311;
+    --radar-green: #00ff00;
+    --radar-dim: #008800;
+    --text-color: #e0e0e0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', monospace;
+}
+
+body {
+    background-color: var(--primary-dark);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: var(--radar-green);
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: rgba(0, 255, 0, 0.2);
+}
+
+.nav-underline {
+    width: 80%;
+    max-width: 800px;
+    height: 2px;
+    background-color: var(--radar-green);
+    margin: 0 auto 2rem;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    padding: 0 1rem;
+}
+
+.radar-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 600px;
+    aspect-ratio: 1 / 1;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    background: transparent;
+}
+
+.radar-canvas {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: transparent;
+    pointer-events: none;
+}
+
+.aircraft {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: 
+        left 0.8s ease-out,
+        top 0.8s ease-out,
+        transform 0.8s ease-out;
+    filter: invert(100%) brightness(100%);
+    z-index: 2;
+}
+
+.sub-aircraft {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.aircraft::after {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 40px; height: 40px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: radial-gradient(var(--radar-green), transparent 70%);
+    opacity: 0;
+    animation: pulse 2s infinite;
+    pointer-events: none;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(0.5);
+        opacity: 0.7;
+    }
+    70% {
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 0;
+    }
+}
+
+.tooltip {
+    position: absolute;
+    background-color: rgba(0, 10, 0, 0.9);
+    color: var(--radar-green);
+    padding: 0.5rem;
+    border: 1px solid var(--radar-green);
+    border-radius: 4px;
+    font-size: 0.8rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 100;
+}
+
+/* .airspace class is removed */
+
+.intro-text {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.new-posts {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 2rem;
+}
+
+.new-posts h2 {
+    color: var(--radar-green);
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--radar-dim);
+    padding-bottom: 0.5rem;
+}
+
+.post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.post-item {
+    display: flex;
+    gap: 1rem;
+}
+
+.post-date {
+    min-width: 100px;
+    color: var(--radar-dim);
+}
+
+.post-link a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.post-link a:hover {
+    color: var(--radar-green);
+}
+
+footer {
+    width: 100%;
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+.rss-link {
+    color: var(--radar-green);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.rss-icon {
+    width: 16px;
+    height: 16px;
+    fill: var(--radar-green);
+}
+
+@media (max-width: 768px) {
+    .radar-container {
+        max-width: 100vw;
+        height: 60vw;
+        min-height: 300px;
+        max-height: 80vw;
+    }
+    .aircraft {
+        width: 15px !important;
+        height: 15px !important;
+    }
+    .aircraft.sub-aircraft {
+        width: 10px !important;
+        height: 10px !important;
+    }
+}
