@@ -135,7 +135,8 @@ document.addEventListener('DOMContentLoaded', () => {
             src: 'assets/images/airplane_2.svg',
             bearing: 300, range: 0.60, size: 1,
             subsections: [
-                { id: 'note1', name: 'Boeing MCAS', url: '/notes/note1.html', src: 'assets/images/airplane_2.svg', bearing: 295, range: 0.70, size: 0.7 }
+                { id: 'note1', name: 'Boeing MCAS', url: '/notes/note1.html', src: 'assets/images/airplane_2.svg', bearing: 295, range: 0.70, size: 0.7 },
+                { id: 'note3', name: 'AI171', url: '/notes/note3.html', src: 'assets/images/airplane_2.svg', bearing: 290, range: 0.60, size: 0.7 }
             ]
         },
         { 
