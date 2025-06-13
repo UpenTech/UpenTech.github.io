@@ -232,6 +232,24 @@
     }
 }
 
+/* === Image Styling === */
+.note-body img {
+    display: block;
+    margin: 2rem auto;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid rgba(0, 255, 120, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 255, 120, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    /* New additions */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
 
 
 
